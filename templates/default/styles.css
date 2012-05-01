@@ -66,7 +66,7 @@ p {
 	text-shadow: 0 0 12px rgba(150, 210, 255, 0.9);
 }
 #list_header {
-	height: 30px;
+	height: {:if (strlen($this->_tpl_vars, 'browse_header') gte 28):}50{:else:}30{:/if:}px;
 	padding: 0;
 	width: 320px;
 	margin: 0 auto;

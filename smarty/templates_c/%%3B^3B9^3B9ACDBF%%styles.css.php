@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2010-01-24 18:51:42
+<?php /* Smarty version 2.6.26, created on 2012-04-30 04:13:43
          compiled from default/styles.css */ ?>
 * {
 	margin: 0px;
@@ -73,7 +73,7 @@ p {
 	text-shadow: 0 0 12px rgba(150, 210, 255, 0.9);
 }
 #list_header {
-	height: 30px;
+	height: <?php if (( strlen ( $this->_tpl_vars['this']->_tpl_vars , 'browse_header' ) >= 28 )): ?>50<?php else: ?>30<?php endif; ?>px;
 	padding: 0;
 	width: 320px;
 	margin: 0 auto;
