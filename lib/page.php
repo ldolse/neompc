@@ -55,6 +55,7 @@
 			$initialprogress = round($progressbar_width - (($mympd->current_track_position / $mympd->current_track_length) * $progressbar_width));
 			
 			$smarty->assign('initialprogress', $initialprogress);
+			date_default_timezone_set('UTC');
 			$smarty->assign('initialmin', date('i', $mympd->current_track_position));
 			$smarty->assign('initialsec', date('s', $mympd->current_track_position));
 			$smarty->assign('totalmin', date('i', $mympd->current_track_length));
